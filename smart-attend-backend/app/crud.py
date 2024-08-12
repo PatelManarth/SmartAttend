@@ -1,9 +1,9 @@
 from .models import Student, AttendanceRecord, ScheduledClass
-from .database import get_student_collection, get_attendance_collection, get_scheduled_classes_collection
+from .database import db
 from .utils import generate_student_id
 
-student_collection = get_student_collection()
-scheduled_classes_collection = get_scheduled_classes_collection()
+student_collection = db['students']
+scheduled_classes_collection = db['scheduled_classes']
 
 def create_student(student: Student):
     student.student_id = generate_student_id()
@@ -13,11 +13,13 @@ def get_students():
     return list(student_collection.find({}, {'_id': 0}))
 
 def create_attendance_record(record: AttendanceRecord):
-    attendance_collection = get_attendance_collection(record.course)
+    collection_name = f'attendance_{record.course}'
+    attendance_collection = db[collection_name]
     attendance_collection.insert_one(record.model_dump())
 
 def get_attendance_records(course):
-    attendance_collection = get_attendance_collection(course)
+    collection_name = f'attendance_{course}'
+    attendance_collection = db[collection_name]
     return list(attendance_collection.find({}, {'_id': 0}))
 
 def create_scheduled_class(scheduled_class: ScheduledClass):
