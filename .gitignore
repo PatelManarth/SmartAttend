@@ -8,7 +8,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 **/__pycache__/
-
+TEST_FOLDER_APP/
 # C extensions
 *.so
 

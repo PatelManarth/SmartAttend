@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import List
 
 class Student(BaseModel):
-    student_id: str
+    student_id: str = None
     email: str
     first_name: str
     last_name: str
