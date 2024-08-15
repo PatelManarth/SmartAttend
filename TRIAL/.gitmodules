@@ -1,0 +1,3 @@
+[submodule "smart-attend-frontend"]
+	path = TRIAL/smart-attend-frontend
+	url = https://github.com/PatelManarth/smart-attend-frontend 
