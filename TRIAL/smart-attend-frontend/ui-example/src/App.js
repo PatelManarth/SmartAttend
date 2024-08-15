@@ -6,7 +6,7 @@ import '@zoom/videosdk-ui-toolkit/dist/videosdk-ui-toolkit.css'
 function App() {
 
   var sessionContainer
-  var authEndpoint = ''
+  var authEndpoint = 'https://smart-attend-auth-endpoint-dedf0223a758.herokuapp.com/'
   var config = {
       videoSDKJWT: '',
       sessionName: 'test',
