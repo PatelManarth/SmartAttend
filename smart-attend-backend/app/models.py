@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 class User(BaseModel):
     username: str
@@ -17,5 +17,5 @@ class Attendance(BaseModel):
     student_id: str
     course_id: str
     meeting_id: str
-    status: str  # present, absent, unknown
+    status: str  # 'present', 'absent', 'unknown'
     timestamp: str

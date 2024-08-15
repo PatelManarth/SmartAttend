@@ -13,3 +13,7 @@ def get_meeting_collection():
     if 'meetings' not in db.list_collection_names():
         db.create_collection('meetings')
     return db['meetings']
+
+def get_user_by_username(username: str): 
+    db['users'].find_one({"username": username})
+    return db['users']
