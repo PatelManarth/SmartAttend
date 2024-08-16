@@ -1,3 +1,4 @@
+![SmartAttend System Image](image2.jpeg)
 
 # Contributing to SmartAttend
 

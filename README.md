@@ -1,6 +1,6 @@
 
 # SmartAttend
-
+![SmartAttend System Image](image1.jpeg)
 ## Overview
 
 SmartAttend is a comprehensive, AI-powered attendance management system designed to automate the process of attendance tracking. The system uses facial recognition technology to track attendance in real-time during Zoom meetings and other virtual classroom settings. This project is split into three main components:
