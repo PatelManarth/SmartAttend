@@ -18,7 +18,7 @@ def speak(str1):
 
 def send_email(to_email, subject, body):
     USER = "smartattend@outlook.com"
-    PASSWORD = "password"
+    PASSWORD = "autoattend@1234"
 
     try:
         msg = MIMEMultipart()
@@ -97,8 +97,8 @@ while True:
 
             # Send email
             subject = "Attendance Confirmation"
-            body = f"Dear Student,\n\nYour attendance has been marked at {timestamp}.\n\nBest regards,\nAttendance System"
-            send_email("student@example.com", subject, body)  # Replace with actual student email
+            body = f"Dear Student,\n\nYour attendance has been marked for AI Enterprise System Course at {timestamp}.\n\nBest regards,\nSmart Attend System"
+            send_email("manarth.patel@dcmail.ca", subject, body)  
             time.sleep(5)
 
     imgBackground[162:162 + 480, 55:55 + 640] = frame
