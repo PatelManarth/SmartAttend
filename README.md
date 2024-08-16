@@ -164,7 +164,7 @@ This project is licensed under the MIT License. See the [LICENSE.md](smart-atten
 
 ## Contributions
 
-We welcome contributions! Please see the [CONTRIBUTING.md](smart-attend-backend/auth_endpoint/CONTRIBUTING.md) file for more information.
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 ---
 
